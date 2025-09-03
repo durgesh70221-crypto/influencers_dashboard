@@ -3,50 +3,50 @@ import pandas as pd
 import altair as alt
 
 data = """
-Name / Handle,Platform,"Followers / Subscribers Count",Category / Niche,Contact Information
-Priyanka Mishra,Instagram,156.9K,"Online trainers",N/A
-Sumit Varyani,Instagram,N/A,"Photography, Travel & Food",N/A
-Nuzhat Parween,Instagram,124.7K,Cricket,N/A
-Shriya Gullah,Instagram,143.4K,"Makeup / Beauty",N/A
-Khushhali Sharma,Instagram,141.7K,N/A,N/A
-Mehak Smoker,Instagram,157.4K,VJs & RJs,N/A
-Anushka Bajpayee,Instagram,N/A,"Fashion, Lifestyle, Model",anushkabajpayee@gmail.com
-Annie Jain,Instagram,489.7K,Appliance Reviewers,N/A
-Naini Jain,Instagram,250.1K,"Family, Kids & Pets",N/A
-ARISH GOUR,Instagram,205.2K,"Pets & Animals",N/A
-Renuka Pahade,Instagram,198.5K,Fitness,N/A
-Shiway,Instagram,196.1K,Freestylers,N/A
-Bhopali Points,Instagram,206.9K,Vloggers,N/A
-Arpita,Instagram,46.9K,Food,N/A
-Shatakshi Rai,Instagram,30.8K,"Food, Fashion",N/A
-Mayuriii,Instagram,25.8K,Fashion,N/A
-Rohan Pathak,Instagram,25.2K,N/A,N/A
-Kamal Batham,Instagram,24K,"Arts, Doodling & Painting",N/A
-Akash Pandey,Instagram,23.6K,N/A,N/A
-Vikash Malviya,Instagram,21.7K,Fashion,N/A
-Divyani Ghosh,Instagram,24.2K,N/A,N/A
-Sudeep Shah,Instagram,19.2K,N/A,N/A
-Anurag Dhakad,Instagram,18.9K,N/A,N/A
-Anshu Samraat MandLekar,Instagram,18.5K,"Family, Kids & Pets",N/A
-Divyanshi_Das,Instagram,18.1K,N/A,N/A
-Shalinni,Instagram,18.4K,N/A,N/A
-Kartik Swamy,Instagram,16.6K,"Travel & Places",N/A
-Pratibha Sahu,"Instagram, YouTube",N/A,"Dancer, Fashion Designer",N/A
-Harshita Rajak,YouTube,23.7K,"Beauty, Fashion, Lifestyle",N/A
-Yogesh Sharma,YouTube,244K,"Travel, Vlogs",Yogeshsharmadance@gmail.com
-Wanderlust Shashank,YouTube,N/A,"Travel, Vlogs",N/A
-IFRAH,Instagram,19.9K,"Crafts & DIY Arts",N/A
-Shefali Alvares Rashid,Instagram,57K,Musicians,N/A
-Nir Addie,Instagram,53.6K,N/A,N/A
-Mamta,Instagram,49.3K,"Family, Kids & Pets",N/A
-Arish,Instagram,46.8K,"Pets & Animals",N/A
-Laaraib Siddique,Instagram,41.1K,Musicians,N/A
-Syed Mehboob Ali,Instagram,40.6K,N/A,N/A
-Shryansh Bisen,Instagram,36.3K,VJs & RJs,N/A
-deepbellus makeup,Instagram,34.3K,Makeup,N/A
-saloni chouksey,Instagram,33K,"Family, Kids & Pets",N/A
-THE BHOPAL,Instagram,33.6K,"City-focused, Travel & Places",N/A
-SUBHAN UDDIN,Instagram,30.3K,N/A,N/A
+Name / Handle,Platform,Profile URL,"Followers / Subscribers Count",Category / Niche,Contact Information
+Priyanka Mishra,Instagram,https://www.instagram.com/officialsandeepmishra_,156.9K,"Online trainers",N/A
+Sumit Varyani,Instagram,,N/A,"Photography, Travel & Food",N/A
+Nuzhat Parween,Instagram,https://www.instagram.com/nuzhatparween786,124.7K,Cricket,N/A
+Shriya Gullah,Instagram,https://www.instagram.com/makeupstoriesbyshreya,143.4K,"Makeup / Beauty",N/A
+Khushhali Sharma,Instagram,https://www.instagram.com/zinminolisharma,141.7K,N/A,N/A
+Mehak Smoker,Instagram,https://www.instagram.com/mehaksmoker,157.4K,VJs & RJs,N/A
+Anushka Bajpayee,Instagram,https://www.instagram.com/anushkabajpayee,N/A,"Fashion, Lifestyle, Model",anushkabajpayee@gmail.com
+Annie Jain,Instagram,https://www.instagram.com/amazing_finds_annie,489.7K,Appliance Reviewers,N/A
+Naini Jain,Instagram,https://www.instagram.com/rj_naini,250.1K,"Family, Kids & Pets",N/A
+ARISH GOUR,Instagram,https://www.instagram.com/animals_cute.wild,205.2K,"Pets & Animals",N/A
+Renuka Pahade,Instagram,https://www.instagram.com/jasmine_simplyperfect,198.5K,Fitness,N/A
+Shiway,Instagram,https://www.instagram.com/shiway_skate_stunt,196.1K,Freestylers,N/A
+Bhopali Points,Instagram,https://www.instagram.com/bhopali_points,206.9K,Vloggers,N/A
+Arpita,Instagram,https://www.instagram.com/bhukkad_belly,46.9K,Food,N/A
+Shatakshi Rai,Instagram,https://www.instagram.com/the.foodie_fashionista,30.8K,"Food, Fashion",N/A
+Mayuriii,Instagram,https://www.instagram.com/mayuribilthareofficial,25.8K,Fashion,N/A
+Rohan Pathak,Instagram,https://www.instagram.com/imrohanhq,25.2K,N/A,N/A
+Kamal Batham,Instagram,https://www.instagram.com/art_with_komu_,24K,"Arts, Doodling & Painting",N/A
+Akash Pandey,Instagram,https://www.instagram.com/akashpandey_official__,23.6K,N/A,N/A
+Vikash Malviya,Instagram,https://www.instagram.com/vikashmalviya9,21.7K,Fashion,N/A
+Divyani Ghosh,Instagram,https://www.instagram.com/divyanighosh9518,24.2K,N/A,N/A
+Sudeep Shah,Instagram,https://www.instagram.com/i.am.sudeep.shah,19.2K,N/A,N/A
+Anurag Dhakad,Instagram,https://www.instagram.com/anuragdhakad01,18.9K,N/A,N/A
+Anshu Samraat MandLekar,Instagram,https://www.instagram.com/anshu_and_samraat,18.5K,"Family, Kids & Pets",N/A
+Divyanshi_Das,Instagram,https://www.instagram.com/official_divyanshidas1410,18.1K,N/A,N/A
+Shalinni,Instagram,https://www.instagram.com/sheengram_tkg,18.4K,N/A,N/A
+Kartik Swamy,Instagram,https://www.instagram.com/anna_kartik_,16.6K,"Travel & Places",N/A
+Pratibha Sahu,"Instagram, YouTube",,N/A,"Dancer, Fashion Designer",N/A
+Harshita Rajak,YouTube,,23.7K,"Beauty, Fashion, Lifestyle",N/A
+Yogesh Sharma,YouTube,,244K,"Travel, Vlogs",Yogeshsharmadance@gmail.com
+Wanderlust Shashank,YouTube,,N/A,"Travel, Vlogs",N/A
+IFRAH,Instagram,https://www.instagram.com/crafts_by_ifrah,19.9K,"Crafts & DIY Arts",N/A
+Shefali Alvares Rashid,Instagram,https://www.instagram.com/shefali_alvares,57K,Musicians,N/A
+Nir Addie,Instagram,https://www.instagram.com/nir.addie,53.6K,N/A,N/A
+Mamta,Instagram,https://www.instagram.com/lil_babie_world,49.3K,"Family, Kids & Pets",N/A
+Arish,Instagram,https://www.instagram.com/arish_nature.animals,46.8K,"Pets & Animals",N/A
+Laaraib Siddique,Instagram,https://www.instagram.com/laaraibsiddique,41.1K,Musicians,N/A
+Syed Mehboob Ali,Instagram,https://www.instagram.com/mehboob.alii,40.6K,N/A,N/A
+Shryansh Bisen,Instagram,https://www.instagram.com/shrylox,36.3K,VJs & RJs,N/A
+deepbellus makeup,Instagram,https://www.instagram.com/deepbellusmakeup,34.3K,Makeup,N/A
+saloni chouksey,Instagram,https://www.instagram.com/the_amishu_chouksey,33K,"Family, Kids & Pets",N/A
+THE BHOPAL,Instagram,https://www.instagram.com/thebhopal,33.6K,"City-focused, Travel & Places",N/A
+SUBHAN UDDIN,Instagram,https://www.instagram.com/subhan_ud,30.3K,N/A,N/A
 """
 
 def parse_followers(follower_str):
@@ -214,9 +214,12 @@ else:
                     st.markdown(f'<p style="font-size: 0.875rem; color: #8a7a6a; margin-bottom: 0.25rem;"><strong>Niche:</strong> {influencer["Category / Niche"]}</p>', unsafe_allow_html=True)
                     st.markdown(f'<p style="font-size: 0.875rem; color: #8a7a6a; margin-bottom: 0.25rem;"><strong>Tier:</strong> {influencer["Tier"]}</p>', unsafe_allow_html=True)
                     
-                    if pd.notna(influencer['Profile URL']) and influencer['Profile URL'].strip():
-                        st.markdown(f'<a href="{influencer["Profile URL"]}" target="_blank" style="display: block; width: 100%; text-align: center; background-color: #B9AD9E; color: white; padding: 0.5rem; border-radius: 0.5rem; margin-top: 1rem; text-decoration: none;">View Profile</a>', unsafe_allow_html=True)
-                    else:
+                    try:
+                        if pd.notna(influencer['Profile URL']) and influencer['Profile URL'].strip():
+                            st.markdown(f'<a href="{influencer["Profile URL"]}" target="_blank" style="display: block; width: 100%; text-align: center; background-color: #B9AD9E; color: white; padding: 0.5rem; border-radius: 0.5rem; margin-top: 1rem; text-decoration: none;">View Profile</a>', unsafe_allow_html=True)
+                        else:
+                            st.markdown(f'<div style="background-color: #e0e0e0; color: #a0a0a0; text-align: center; padding: 0.5rem; border-radius: 0.5rem; margin-top: 1rem;">No Profile</div>', unsafe_allow_html=True)
+                    except KeyError:
                         st.markdown(f'<div style="background-color: #e0e0e0; color: #a0a0a0; text-align: center; padding: 0.5rem; border-radius: 0.5rem; margin-top: 1rem;">No Profile</div>', unsafe_allow_html=True)
                     
                     st.markdown('</div>', unsafe_allow_html=True)
